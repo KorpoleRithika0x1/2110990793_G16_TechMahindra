@@ -32,22 +32,24 @@
 // arrow();
 
 //CASE1
-// xyz();//1
-// abc();//Uncaught TypeError: abc is not a function
-// function xyz(){
-//     console.log(1);
-//  }
-//  var abc=function(){
-//     console.log(2);
-//  }
+ xyz();//1
+ abc();//Uncaught TypeError: abc is not a function
+ function xyz(){
+     console.log(1);
+  }
+  var abc=function(){
+     console.log(2);
+  }
 
 // //CASE2
-// function xyz(){
-//         console.log(1);
-//      }
-//      var abc=function cdf(){
-//         console.log(2);
-//      }
-//      xyz();//1
-//      abc();//2
-//      cdf();//Uncaught ReferenceError: cdf is not defined
+ function xyz(){
+        console.log(1);
+    }
+    var abc=function cdf(){
+       console.log(2);
+   }
+   xyz();//1
+      abc();//2
+      cdf();//Uncaught ReferenceError: cdf is not defined
+      
+      
